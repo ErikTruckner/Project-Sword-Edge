@@ -24,7 +24,7 @@ const Computers = () => {
       <primitive
         object={computer.scene}
         scale={0.75}
-        position={[0, -1.5, -0.5]}
+        position={[0, -1.5, -0]}
         // ***THIS ROTATION SETS TO A GOOD INITIAL VIEW
         rotation={[0, -5, 0]}
       />
