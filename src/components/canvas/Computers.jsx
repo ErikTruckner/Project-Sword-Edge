@@ -3,19 +3,30 @@ import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
 
 import CanvasLoader from '../Loader'
+import { MeshPhongMaterial } from 'three'
 
 const Computers = () => {
   // ** REQUIRES BIN FILE, WHICH ON MY PC LOOKS LIKE A MOVIE FILE FOR SOME REASON **
   const computer = useGLTF('./reactLogo/scene.gltf')
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor='black' />
-      <pointLight intensity={1} />
-      {/* THE PROPERTIES OF GLTF */}
+      {/* <hemisphereLight intensity={1} groundColor='blue' /> */}
+      <pointLight intensity={3} color={0x3ac0ff} position={[0, 2, 3]} />
+      <spotLight
+        position={(-20, 50, 10)}
+        angle={0.9}
+        penumbra={1}
+        intensity={1}
+        color={0x1e2f97}
+      />
+
+      {/* THE primitive CONTAINS PROPERTIES OF GLTF */}
       <primitive
         object={computer.scene}
         scale={0.75}
-        position={[0, -1.5, -1.5]}
+        position={[0, -1.5, -0.5]}
+        // ***THIS ROTATION SETS TO A GOOD INITIAL VIEW
+        rotation={[0, -5, 0]}
       />
     </mesh>
   )
