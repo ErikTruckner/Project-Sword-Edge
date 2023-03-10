@@ -11,8 +11,12 @@ const Computers = () => {
     <mesh>
       <hemisphereLight intensity={0.15} groundColor='black' />
       <pointLight intensity={1} />
-      {/* THE PROPERTIES OF GLTF OBJECT */}
-      <primitive object={computer.scene} />
+      {/* THE PROPERTIES OF GLTF */}
+      <primitive
+        object={computer.scene}
+        scale={0.75}
+        position={[0, -1.5, -1.5]}
+      />
     </mesh>
   )
 }
@@ -37,4 +41,4 @@ const ComputersCanvas = () => {
   )
 }
 
-export default Computers
+export default ComputersCanvas
