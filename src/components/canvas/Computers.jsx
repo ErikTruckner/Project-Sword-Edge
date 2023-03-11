@@ -23,8 +23,8 @@ const Computers = ({ isMobile }) => {
       {/* THE primitive CONTAINS PROPERTIES OF GLTF */}
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.75 : 0.9}
-        position={isMobile ? [0, -0.9, 0] : [0, -1.2, 0]}
+        scale={isMobile ? 0.6 : 0.9}
+        position={isMobile ? [0, -0.5, 0] : [0, -1.2, 0]}
         // ***THIS ROTATION SETS TO A GOOD INITIAL VIEW
         rotation={[0, -5, 0]}
       />

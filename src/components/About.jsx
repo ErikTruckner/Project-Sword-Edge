@@ -7,6 +7,30 @@ import { styles } from '../styles'
 import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 
+const ServiceCard = ({ index, title, icon }) => {
+  return (
+    <Tilt className='xs:w-[250px] w-full'>
+      <motion.div
+        variants={fadeIn('right', 'spring', 0.5 * index, 1)}
+        className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'>
+        <div
+          // **TILT OPTIONS
+          options={{
+            max: 45,
+            scale: 1,
+            speed: 450,
+          }}
+          className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
+          <img src={icon} alt={title} className='w-16 h-16 object-contain' />
+          <h3 className='text-white text-[20px] font-bold text-center'>
+            {title}{' '}
+          </h3>
+        </div>
+      </motion.div>
+    </Tilt>
+  )
+}
+
 const About = () => {
   return (
     <>
@@ -15,27 +39,26 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
       {/* fadeIn values: direction, type, delay, duration  */}
-      <motion.p variants={fadeIn('', '', 0.1, 1)}>
-        As a highly skilled software developer, I possess extensive expertise in
-        an array of cutting-edge technologies, including but not limited to
-        renowned JavaScript frameworks such as React, Next, Vue, Nuxt, and
-        Three. My proficiency in Node.js and Express.js middleware has allowed
-        me to seamlessly develop robust, scalable, and efficient APIs that cater
-        to both SQL and noSQL databases. I take pride in my ability to stay
-        ahead of the curve by continuously expanding my knowledge and skillset,
-        enabling me to deliver innovative and reliable solutions that exceed
-        expectations. In addition to my technical expertise, I am also
-        passionate about creating exceptional user experiences through good
-        design and user interface. I believe that pushing the boundaries of
-        frontend visual styles is essential in changing the way we interact with
-        the web, and I strive to incorporate emerging technologies, including
-        3D, to achieve this goal. By blending my technical skills with my eye
-        for design, I work to create visually stunning and intuitive interfaces
-        that push the limits of what's possible in web development. I am
-        dedicated to continuously exploring new design concepts and emerging
-        technologies to create innovative and reliable solutions that not only
-        meet but exceed expectations.
+      <motion.p
+        variants={fadeIn('', '', 0.1, 1)}
+        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
+        As a software developer, I possess technical expertise in utilizing
+        advanced technologies like React, Next, Vue, Nuxt, and Three to deliver
+        reliable and impactful solutions. I am committed to creating exceptional
+        user experiences through good design and interface, incorporating
+        emerging technologies like 3D to push the boundaries of frontend visual
+        styles and enhance user engagement. My dedication to continuous
+        improvement and learning enables me to deliver innovative solutions that
+        prioritize quality and reliability. Overall, I strive to deliver
+        software solutions that leave a lasting impact and exceed expectations.
       </motion.p>
+
+      <div className='mt-20 flex flex-wrap gap-10'>
+        {/* Looping through services array (in index.js) */}
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
+      </div>
     </>
   )
 }
