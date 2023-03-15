@@ -39,6 +39,10 @@ export const navLinks = [
     title: 'About',
   },
   {
+    id: 'portfolio',
+    title: 'Portfolio',
+  },
+  {
     id: 'work',
     title: 'Work',
   },
@@ -197,6 +201,10 @@ const projects = [
       {
         name: 'custom css',
         color: 'green-text-gradient',
+      },
+      {
+        name: 'visual data',
+        color: 'pink-text-gradient',
       },
     ],
     image: reactExpense,

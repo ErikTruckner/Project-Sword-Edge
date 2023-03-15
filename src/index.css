@@ -19,6 +19,14 @@
   display: block;
 }
 
+.hover-text-glowing-shadow {
+}
+
+.hover-text-glowing-shadow:hover {
+  text-shadow: 0px -5px 26px rgba(124, 182, 240, 0.75);
+  transform: scale(1.1);
+}
+
 .glowing-shadow {
   box-shadow: 0px 0px 15px 5px rgba(124, 182, 240, 0.75);
   -webkit-box-shadow: 0px 0px 15px 5px rgba(124, 182, 240, 0.75);
@@ -47,6 +55,24 @@
   box-shadow: 0px 0px 15px 5px rgba(124, 182, 240, 0.75) inset;
   -webkit-box-shadow: 0px 0px 15px 5px rgba(124, 182, 240, 0.75) inset;
   -moz-box-shadow: 0px 0px 15px 5px rgba(124, 182, 240, 0.75) inset;
+}
+
+.extreme-hover-glowing-shadow {
+  transition: 1;
+}
+
+.extreme-hover-glowing-shadow:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px 15px rgba(124, 182, 240, 0.75);
+  -webkit-box-shadow: 0px 0px 20px 15px rgba(124, 182, 240, 0.75);
+  -moz-box-shadow: 0px 0px 20px 15px rgba(124, 182, 240, 0.75);
+}
+
+.extreme-hover-glowing-shadow:active {
+  transform: scale(0.9);
+  box-shadow: 0px 0px 20px 15px rgba(18, 255, 101, 0.75);
+  -webkit-box-shadow: 0px 0px 20px 15px rgba(18, 255, 101, 0.75);
+  -moz-box-shadow: 0px 0px 20px 15px rgba(18, 255, 101, 0.75);
 }
 
 .black-gradient {

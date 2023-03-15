@@ -33,14 +33,14 @@ const Navbar = () => {
               key={link.id}
               className={`${
                 active === link.title ? 'text-white' : 'text-secondary'
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-white text-[18px] font-medium hover-text-glowing-shadow cursor-pointer`}
               onClick={() => setActive(link.title)}>
               {/* Coming from src\constants\index.js */}
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
 
-          <div className='black-gradient w-7 h-7  rounded-full flex justify-center items-center'>
+          <div className='black-gradient w-7 h-7  glowing-shadow extreme-hover-glowing-shadow  rounded-full flex justify-center items-center'>
             <a
               className='w-6 h-6 object-contain'
               href='https://github.com/ErikTruckner/Project-Sword-Edge'
@@ -59,12 +59,12 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? 'hidden' : 'flex'
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
-            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+            } p-6 black-gradient absolute top-12 left-0 mx-0 my-5 w-full h-screen z-10`}>
+            <ul className='list-none flex justify-start items-center flex-1 flex-col gap-6'>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                  className={`font-poppins font-medium cursor-pointer  text-[16px] ${
                     active === nav.title ? 'text-white' : 'text-secondary'
                   }`}
                   onClick={() => {
@@ -74,7 +74,7 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
-              <div className='black-gradient w-10 h-10 rounded-full flex justify-center items-center'>
+              <div className='black-gradient w-10 h-10  glowing-shadow rounded-full flex justify-center items-center'>
                 <a
                   className='w-6 h-6 object-contain'
                   href='https://github.com/ErikTruckner/Project-Sword-Edge'
