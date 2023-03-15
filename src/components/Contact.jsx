@@ -31,22 +31,20 @@ const Contact = () => {
     e.preventDefault()
     setLoading(true)
 
-    // template_fjbss0t
-    // service_s3o8u4a
-    // uhvqPgHe8kyncBlQ3
+    // You found it! Congrats! Never do this :)  Use a node server instead - please don't exploit <3
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_s3o8u4a',
+        'template_fjbss0t',
         {
           from_name: form.name,
-          to_name: 'JavaScript Mastery',
+          to_name: 'Erik',
           from_email: form.email,
-          to_email: 'sujata@jsmastery.pro',
+          to_email: 'supererikland@gmail.com',
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'uhvqPgHe8kyncBlQ3'
       )
       .then(
         () => {
@@ -75,7 +73,7 @@ const Contact = () => {
         variants={slideIn('left', 'tween', 0.2, 1)}
         className='flex-[0.75] glass-color p-8 rounded-2xl'>
         <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <h3 className={styles.sectionHeadText}>Contact</h3>
 
         <form
           ref={formRef}
