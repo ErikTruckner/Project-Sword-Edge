@@ -189,7 +189,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'React Expense Tracker',
+    name: 'Expense Tracker App',
     description:
       'Web-based platform that allows users to track expenses over time, providing a visual graph of the data.',
     link: 'https://eriks-react-expense-tracker.netlify.app/',
