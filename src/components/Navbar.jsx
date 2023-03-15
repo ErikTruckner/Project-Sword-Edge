@@ -39,6 +39,15 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
+
+          <div className='black-gradient w-7 h-7  rounded-full flex justify-center items-center'>
+            <a
+              className='w-6 h-6 object-contain'
+              href='https://github.com/ErikTruckner/Project-Sword-Edge'
+              target='_blank'>
+              <img src='src\assets\github.png' alt='github' />
+            </a>
+          </div>
         </ul>
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
@@ -65,6 +74,14 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+              <div className='black-gradient w-10 h-10 rounded-full flex justify-center items-center'>
+                <a
+                  className='w-6 h-6 object-contain'
+                  href='https://github.com/ErikTruckner/Project-Sword-Edge'
+                  target='_blank'>
+                  <img src='src\assets\github.png' alt='github' />
+                </a>
+              </div>
             </ul>
           </div>
         </div>
