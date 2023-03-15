@@ -21,6 +21,12 @@ import {
   atom,
   tesla,
   shopify,
+  reactExpense,
+  reactGoals,
+  reactThreeCars,
+  reactToDo,
+  VueThreeSplash,
+  ogPortThumb,
   carrent,
   jobit,
   tripguide,
@@ -179,30 +185,27 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'React Expense Tracker',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'Web-based platform that allows users to track expenses over time, providing a visual graph of the data.',
+    link: 'https://eriks-react-expense-tracker.netlify.app/',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'Custom CSS',
         color: 'green-text-gradient',
       },
-      {
-        name: 'tailwind',
-        color: 'pink-text-gradient',
-      },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: reactExpense,
+    source_code_link: 'https://github.com/ErikTruckner/REACT-Expense-Tracker',
   },
   {
-    name: 'Job IT',
+    name: 'Three.js Splash Page',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      'Created using Nuxt.js and Three.js; an interactive WebGL splash page utilizing camera position animations via GreenSock Animation Platform (GSAP).',
     tags: [
       {
         name: 'react',
@@ -217,13 +220,13 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
+    image: VueThreeSplash,
+    source_code_link: 'https://github.com/ErikTruckner/VueTHREEjsPortfolio',
   },
   {
-    name: 'Trip Guide',
+    name: 'React To Do List',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'A to do list app created using React and Bootstrap. Implementing CRUD (Create, Read, Update, Delete) functionality with user populated data.',
     tags: [
       {
         name: 'nextjs',
@@ -238,8 +241,71 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image: reactToDo,
+    source_code_link: 'https://github.com/ErikTruckner/react-todo-list',
+  },
+  {
+    name: 'React Daily Goals App',
+    description:
+      'Created using React. A simple daily goal app utilizing Create and Delete methods, as well as changing user input field styles based on users actions.',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'supabase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: reactGoals,
+    source_code_link: 'https://github.com/ErikTruckner/REACT-goal-list',
+  },
+  {
+    name: 'R3F Car Shop',
+    description:
+      'A WebGL project created using React-Three-Fiber; featuring user ability to manipulate camera position and colors of imported glTF models using HTML buttons. Apple users may need to enable WebGL in their browser. There are known issues with some iOS devices. This project is rather heavy as it utilizes physics, multiple lights sources, shadows, and multiple glTF objects. Thus, some devices may suffer from performance issues.',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'supabase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: reactThreeCars,
+    source_code_link: 'https://github.com/ErikTruckner/cars',
+  },
+  {
+    name: 'Vanilla JavaScript Three.js Portfolio',
+    description:
+      'A WebGL project created using React-Three-Fiber; featuring user ability to manipulate camera position and colors of imported glTF models using HTML buttons. Apple users may need to enable WebGL in their browser. There are known issues with some iOS devices. This project is rather heavy as it utilizes physics, multiple lights sources, shadows, and multiple glTF objects. Thus, some devices may suffer from performance issues.',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'supabase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: ogPortThumb,
+    source_code_link: 'https://github.com/ErikTruckner/portfolio3',
   },
 ]
 

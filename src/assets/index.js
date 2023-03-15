@@ -30,6 +30,13 @@ import lawn from './company/lawn.png'
 import dharma from './company/dharma.png'
 import atom from './company/atom.png'
 
+import ogPortThumb from './ogPortThumb.jpg'
+import reactExpense from './reactExpense.png'
+import reactGoals from './reactGoals.png'
+import reactThreeCars from './reactThreeCars.png'
+import reactToDo from './reactToDo.png'
+import VueThreeSplash from './VueThreeSplash.png'
+
 import carrent from './carrent.png'
 import jobit from './jobit.png'
 import tripguide from './tripguide.png'
@@ -63,6 +70,12 @@ export {
   lawn,
   dharma,
   atom,
+  ogPortThumb,
+  reactExpense,
+  reactGoals,
+  reactThreeCars,
+  reactToDo,
+  VueThreeSplash,
   carrent,
   jobit,
   tripguide,
