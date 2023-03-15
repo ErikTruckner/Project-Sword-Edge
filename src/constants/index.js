@@ -195,7 +195,7 @@ const projects = [
         color: 'blue-text-gradient',
       },
       {
-        name: 'Custom CSS',
+        name: 'custom css',
         color: 'green-text-gradient',
       },
     ],
@@ -206,17 +206,18 @@ const projects = [
     name: 'Three.js Splash Page',
     description:
       'Created using Nuxt.js and Three.js; an interactive WebGL splash page utilizing camera position animations via GreenSock Animation Platform (GSAP).',
+    link: 'https://portfoliosplash.netlify.app/',
     tags: [
       {
-        name: 'react',
+        name: 'vue',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'three.js',
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'gsap',
         color: 'pink-text-gradient',
       },
     ],
@@ -226,18 +227,19 @@ const projects = [
   {
     name: 'React To Do List',
     description:
-      'A to do list app created using React and Bootstrap. Implementing CRUD (Create, Read, Update, Delete) functionality with user populated data.',
+      'A to do list app created using React and custom Bootstrap. Implementing CRUD (Create, Read, Update, Delete) functionality with user populated data.',
+    link: 'https://eriks-react-todo-list.netlify.app/',
     tags: [
       {
-        name: 'nextjs',
+        name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'bootstrap',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'CRUD',
         color: 'pink-text-gradient',
       },
     ],
@@ -248,17 +250,18 @@ const projects = [
     name: 'React Daily Goals App',
     description:
       'Created using React. A simple daily goal app utilizing Create and Delete methods, as well as changing user input field styles based on users actions.',
+    link: 'https://eriks-daily-goals-app.netlify.app/',
     tags: [
       {
-        name: 'nextjs',
+        name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'custom css',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'CRUD',
         color: 'pink-text-gradient',
       },
     ],
@@ -268,18 +271,19 @@ const projects = [
   {
     name: 'R3F Car Shop',
     description:
-      'A WebGL project created using React-Three-Fiber; featuring user ability to manipulate camera position and colors of imported glTF models using HTML buttons. Apple users may need to enable WebGL in their browser. There are known issues with some iOS devices. This project is rather heavy as it utilizes physics, multiple lights sources, shadows, and multiple glTF objects. Thus, some devices may suffer from performance issues.',
+      'React Three Fiber project featuring user ability to manipulate camera position and colors of imported glTF models using HTML buttons. iOS users may need to enable WebGL in their browser. There are known issues with some iOS devices. This app is rather heavy as it utilizes physics, multiple lights sources, shadows, and multiple glTF objects. Thus, some devices may suffer from performance issues.',
+    link: 'https://carcolorshop.netlify.app/',
     tags: [
       {
-        name: 'nextjs',
+        name: 'react three fiber',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'gsap',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'ux',
         color: 'pink-text-gradient',
       },
     ],
@@ -289,18 +293,19 @@ const projects = [
   {
     name: 'Vanilla JavaScript Three.js Portfolio',
     description:
-      'A WebGL project created using React-Three-Fiber; featuring user ability to manipulate camera position and colors of imported glTF models using HTML buttons. Apple users may need to enable WebGL in their browser. There are known issues with some iOS devices. This project is rather heavy as it utilizes physics, multiple lights sources, shadows, and multiple glTF objects. Thus, some devices may suffer from performance issues.',
+      'A simple Vanilla JavaScript Portfolio utilizing Three.js and custom animated glTF created in Blender',
+    link: 'https://eriksportfolio.netlify.app/',
     tags: [
       {
-        name: 'nextjs',
+        name: 'vanilla js',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'three.js',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'blender',
         color: 'pink-text-gradient',
       },
     ],
