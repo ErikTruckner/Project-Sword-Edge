@@ -1,13 +1,37 @@
 import { Suspense, useEffect, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
+import {
+  useAnimations,
+  OrbitControls,
+  Preload,
+  useGLTF,
+} from '@react-three/drei'
 
 import CanvasLoader from '../Loader'
-import { MeshPhongMaterial } from 'three'
 
 const Computers = ({ isMobile }) => {
   // ** REQUIRES BIN FILE, WHICH ON MY PC LOOKS LIKE A MOVIE FILE FOR SOME REASON **
   const computer = useGLTF('./reactLogo/scene.gltf')
+
+  const animations = useAnimations(computer.animations, computer.scene)
+
+  useEffect(() => {
+    const action = animations.actions.SphereAction
+    action.play()
+  }, [])
+  useEffect(() => {
+    const actionOne = animations.actions.TorusAction1
+    actionOne.play()
+  }, [])
+  useEffect(() => {
+    const actionTwo = animations.actions.TorusAction2
+    actionTwo.play()
+  }, [])
+  useEffect(() => {
+    const actionThree = animations.actions.TorusAction3
+    actionThree.play()
+  }, [])
+
   return (
     <mesh>
       {/* <hemisphereLight intensity={1} groundColor='blue' /> */}
@@ -23,7 +47,7 @@ const Computers = ({ isMobile }) => {
       {/* THE primitive CONTAINS PROPERTIES OF GLTF */}
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.6 : 0.9}
+        scale={isMobile ? 0.6 : 0.8}
         position={isMobile ? [0, -0.5, 0] : [0, -1.2, 0]}
         // ***THIS ROTATION SETS TO A GOOD INITIAL VIEW
         rotation={[0, -5, 0]}
@@ -58,10 +82,9 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      frameloop='demand'
+      // frameloop='demand'
       shadows
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}>
+      camera={{ position: [20, 3, 5], fov: 25 }}>
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
