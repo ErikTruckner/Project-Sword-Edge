@@ -15,15 +15,15 @@ import {
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='relative z-o'>
-        <div className='relative z-o'>
-          <Navbar />
+      <div className='relative z-0'>
+        <Navbar />
+        <div className='relative z-0'>
           <Hero />
           <StarsCanvas />
         </div>
         <About />
         <Works />
-        <Tech />
+        {/* <Tech /> */}
 
         <Experience />
 

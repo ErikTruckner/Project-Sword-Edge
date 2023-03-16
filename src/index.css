@@ -13,6 +13,10 @@
   color-scheme: dark;
 }
 
+.narbar-background {
+  background-color: #1015a8;
+}
+
 .glass-color {
   background: rgb(2, 0, 36);
   background: -moz-linear-gradient(
@@ -21,12 +25,14 @@
     rgba(9, 60, 121, 0.6446953781512605) 35%,
     rgba(0, 125, 255, 0.8407738095238095) 100%
   );
+
   background: -webkit-linear-gradient(
     01deg,
     rgba(2, 0, 36, 0.8631827731092436) 0%,
     rgba(9, 60, 121, 0.6446953781512605) 35%,
     rgba(0, 125, 255, 0.8407738095238095) 100%
   );
+
   background: linear-gradient(
     01deg,
     rgba(2, 0, 36, 0.8631827731092436) 0%,

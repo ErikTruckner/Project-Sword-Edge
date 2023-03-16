@@ -7,6 +7,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
+    // *** TO PREVENT CAMERA LOCK ON CANVAS ONE CAN RENDER COMPUTERVANVAS HERE AND USER CAN SCROLL ON TOP OF CANVAS (mobile relevent only)
     <section className='relative w-full h-screen mx-auto'>
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
