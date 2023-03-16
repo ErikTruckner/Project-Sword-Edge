@@ -79,7 +79,7 @@ const Navbar = () => {
                   className='w-6 h-6 object-contain'
                   href='https://github.com/ErikTruckner/Project-Sword-Edge'
                   target='_blank'>
-                  <img src='src\assets\github.png' alt='github' />
+                  <img src={github} alt='github' />
                 </a>
               </div>
             </ul>
