@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import { styles } from '../styles'
 import { navLinks } from '../constants'
-import { logo, menu, close } from '../assets'
+import { github, logo, menu, close } from '../assets'
 
 const Navbar = () => {
   const [active, setActive] = useState('')
@@ -45,7 +45,7 @@ const Navbar = () => {
               className='w-6 h-6 object-contain'
               href='https://github.com/ErikTruckner/Project-Sword-Edge'
               target='_blank'>
-              <img src='src\assets\github.png' alt='github' />
+              <img src={github} alt='github' />
             </a>
           </div>
         </ul>
