@@ -64,7 +64,7 @@ const Navbar = () => {
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer  text-[16px] ${
+                  className={`font-poppins font-medium cursor-pointer  text-[36px] ${
                     active === nav.title ? 'text-white' : 'text-secondary'
                   }`}
                   onClick={() => {
@@ -74,7 +74,7 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
-              <div className='black-gradient w-10 h-10  glowing-shadow rounded-full flex justify-center items-center'>
+              <div className='black-gradient w-12 h-12 mt-10 glowing-shadow rounded-full flex justify-center items-center'>
                 <a
                   className='w-6 h-6 object-contain'
                   href='https://github.com/ErikTruckner/Project-Sword-Edge'
