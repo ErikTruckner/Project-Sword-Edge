@@ -3,7 +3,7 @@ import Tilt from 'react-tilt'
 import { motion } from 'framer-motion'
 
 import { styles } from '../styles'
-import { github } from '../assets'
+import { github, arrow } from '../assets'
 import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
@@ -50,7 +50,7 @@ const ProjectCard = ({
           <h3 className='text-white w-full font-bold text-[24px]'>
             {' '}
             <span className='inline-block mr-1'>
-              <img src='src\assets\arrow.png' className='w-5' />
+              <img src={arrow} className='w-5' />
             </span>
             {name}
           </h3>

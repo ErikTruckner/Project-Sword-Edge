@@ -27,6 +27,7 @@ import {
   reactToDo,
   VueThreeSplash,
   ogPortThumb,
+  arrow,
   carrent,
   jobit,
   tripguide,
@@ -193,6 +194,7 @@ const projects = [
     description:
       'Web-based platform that allows users to track expenses over time, providing a visual graph of the data.',
     link: 'https://eriks-react-expense-tracker.netlify.app/',
+    linkImage: './arrow.png',
     tags: [
       {
         name: 'react',

@@ -37,6 +37,8 @@ import reactThreeCars from './reactThreeCars.png'
 import reactToDo from './reactToDo.png'
 import VueThreeSplash from './VueThreeSplash.png'
 
+import arrow from './arrow.png'
+
 import carrent from './carrent.png'
 import jobit from './jobit.png'
 import tripguide from './tripguide.png'
@@ -76,6 +78,7 @@ export {
   reactThreeCars,
   reactToDo,
   VueThreeSplash,
+  arrow,
   carrent,
   jobit,
   tripguide,
