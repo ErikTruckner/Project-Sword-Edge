@@ -3,24 +3,9 @@ import {
   backend,
   creator,
   web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
   lawn,
   dharma,
   atom,
-  tesla,
-  shopify,
   reactExpense,
   reactGoals,
   reactThreeCars,
@@ -28,10 +13,6 @@ import {
   VueThreeSplash,
   ogPortThumb,
   arrow,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
 } from '../assets'
 
 export const navLinks = [
@@ -72,56 +53,9 @@ const services = [
   },
 ]
 
-const technologies = [
-  {
-    name: 'HTML 5',
-    icon: html,
-  },
-  {
-    name: 'CSS 3',
-    icon: css,
-  },
-  {
-    name: 'JavaScript',
-    icon: javascript,
-  },
-  {
-    name: 'React JS',
-    icon: reactjs,
-  },
-  {
-    name: 'Redux Toolkit',
-    icon: redux,
-  },
-  {
-    name: 'Tailwind CSS',
-    icon: tailwind,
-  },
-  {
-    name: 'Node JS',
-    icon: nodejs,
-  },
-  {
-    name: 'MongoDB',
-    icon: mongodb,
-  },
-  {
-    name: 'Three JS',
-    icon: threejs,
-  },
-  {
-    name: 'git',
-    icon: git,
-  },
-  {
-    name: 'figma',
-    icon: figma,
-  },
-]
-
 const experiences = [
   {
-    title: 'Free Lance Contractor',
+    title: 'Freelance Contractor',
     company_name: "Erik's Landscaping",
     icon: lawn,
     iconBg: '#d2fcd4',
@@ -324,4 +258,4 @@ const projects = [
   },
 ]
 
-export { services, technologies, experiences, testimonials, projects }
+export { services, experiences, testimonials, projects }
