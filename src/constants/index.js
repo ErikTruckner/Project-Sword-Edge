@@ -74,7 +74,7 @@ const experiences = [
     iconBg: '#E6DEDD',
     date: 'October 2021 - Present',
     points: [
-      'Developing and maintaining WordPress blog.',
+      'Developing and maintaining WordPress blog',
       'Implementing responsive design and ensuring cross-browser compatibility.',
       'Version Control',
       'Build an audience through Social Media outreach.',
@@ -95,40 +95,13 @@ const experiences = [
   },
 ]
 
-const testimonials = [
-  {
-    testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg',
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg',
-  },
-]
-
 const projects = [
   {
     name: 'Expense Tracker App',
     description:
-      'Web-based platform that allows users to track expenses over time, providing a visual graph of the data.',
+      'Web based platform that provides users with a visual graph of their spending over time. Built with React and custom CSS.',
     link: 'https://eriks-react-expense-tracker.netlify.app/',
-    linkImage: './arrow.png',
+
     tags: [
       {
         name: 'react',
@@ -258,4 +231,4 @@ const projects = [
   },
 ]
 
-export { services, experiences, testimonials, projects }
+export { services, experiences, projects }

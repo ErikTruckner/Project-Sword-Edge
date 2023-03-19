@@ -1,5 +1,7 @@
 import { BrowserRouter } from 'react-router-dom'
 
+import { Perf } from 'r3f-perf'
+
 import {
   About,
   Contact,
