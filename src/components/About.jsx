@@ -50,13 +50,6 @@ const About = () => {
         reliability. Overall, I strive to deliver software solutions that leave
         a lasting impact and exceed expectations.
       </motion.p>
-
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {/* Looping through services array (in index.js) */}
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
     </>
   )
 }
