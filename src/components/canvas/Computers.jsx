@@ -17,21 +17,18 @@ const Computers = ({ isMobile }) => {
 
   const animations = useAnimations(computer.animations, computer.scene)
 
+  const actionNames = [
+    'SphereAction',
+    'TorusAction1',
+    'TorusAction2',
+    'TorusAction3',
+  ]
+
   useEffect(() => {
-    const action = animations.actions.SphereAction
-    action.play()
-  }, [])
-  useEffect(() => {
-    const actionOne = animations.actions.TorusAction1
-    actionOne.play()
-  }, [])
-  useEffect(() => {
-    const actionTwo = animations.actions.TorusAction2
-    actionTwo.play()
-  }, [])
-  useEffect(() => {
-    const actionThree = animations.actions.TorusAction3
-    actionThree.play()
+    actionNames.forEach((actionNames) => {
+      const action = animations.actions[actionNames]
+      action.play()
+    })
   }, [])
 
   return (
