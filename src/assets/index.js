@@ -12,6 +12,7 @@ import dharma from './company/dharma.png'
 import atom from './company/atom.png'
 
 import ogPortThumb from './ogPortThumb.jpg'
+import protocourseTN from './protocourseTN.jpg'
 import reactExpense from './reactExpense.png'
 import reactGoals from './reactGoals.png'
 import reactThreeCars from './reactThreeCars.png'
@@ -37,6 +38,7 @@ export {
   dharma,
   atom,
   ogPortThumb,
+  protocourseTN,
   reactExpense,
   reactGoals,
   reactThreeCars,

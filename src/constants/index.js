@@ -7,6 +7,7 @@ import {
   dharma,
   atom,
   reactExpense,
+  protocourseTN,
   reactGoals,
   reactThreeCars,
   reactToDo,
@@ -96,6 +97,30 @@ const experiences = [
 ]
 
 const projects = [
+  {
+    name: 'React Three Fiber Teaching Site',
+    description:
+      " *In production* Example website for a course I'm creating. This course will teach React Three Fiber, Drei, Framer Motion, Slider.js, and advanced custom CSS animations, and Tailwind",
+    link: 'https://prototype-course.netlify.app/',
+
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'framer motion',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'three.js',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: protocourseTN,
+    source_code_link:
+      'https://github.com/ErikTruckner/Project-Course-Creation-Proto',
+  },
   {
     name: 'Expense Tracker App',
     description:
